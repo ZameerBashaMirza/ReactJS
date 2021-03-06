@@ -1,0 +1,96 @@
+What are effects, really? Examples are:
+
+Fetching data
+Reading from local storage
+Registering and deregistering event listeners
+
+
+****************************
+Components  are user interface
+components are reusable
+Components starts with Capital letter (PascalCase)
+Components can contain another component
+2 types of Components
+
+
+ components code is placed in .js or .jsx files
+
+1-Stateless Functional Component are just JavaScript Functions
+
+Properties(props)-> JavaScript Function -> HTML(JSX)
+
+function Welcome(props){
+return <h1>Hello,  {props.name}</h1>;
+}
+
+simple functions
+use func comp as much as possible
+absencce of 'this' keyword it can be quite tricky
+solution without using state
+mainly responsible for the UI
+Stateless/Dumb/Presentational components
+
+
+
+
+2-Stateful Class Component
+Class components are basically ES6 classes
+
+properties(props)as optional -> ES6 class ( private internall state) -> HTML (JSX)
+
+
+Class extending Component class
+Render method returning HTML
+
+class Welcome extends React.Component{
+render(){
+return <h1>Hello, {this.props.name} </h1>;
+}
+}
+
+class
+
+more feature rich
+maintain their own private data -state
+complex UI logic
+provide lifecycle hooks
+stateful/smart/container components
+
+
+React 16.7.0-alpha
+new feature 2018
+an open RFC
+
+Hooks
+No breaking changes
+Completely opt-in & 100% backwards-compatible.
+component types -functional and class 
+using state,lifecyle methods and 'this' binding.
+after understanding state, event binding & lifecyle hooks in class components.
+
+
+JSX
+JavaScript XML (JSX) - Extension to the js language syntax.
+write XML-like code for elements and components
+JSX tags have a tag name, attributes, and children
+JSX is not a necessity to write React applications.
+JSX makes your react code simpler and elegant.
+JSX ultimately transpiles to pure JavaScript which is understood by the browsers.
+
+
+JSX Differences
+
+class -> className
+for -> htmlFor
+camelCase property naming convention
+onclick -> onClick
+tabindex -> tabIndex
+
+
+props                                        vs          state
+
+props get passed to the component             vs    state is managed within the component
+function parameters                            vs   variables declared in the function body
+props are immutable (not change)                vs  state can be changed
+props - functional Components                   vs  useState Hook - Functional Components
+this.props - class components                   vs  this.state - class Components
